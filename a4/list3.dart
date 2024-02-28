@@ -1,5 +1,5 @@
 void main() {
-  Map<String, double> fruitPrices = {
+  Map<String, double> frutas = {
     "apple": 1.0,
     "banana": 0.5,
     "orange": 0.8,
@@ -7,8 +7,7 @@ void main() {
     "watermelon": 3.0,
   };
 
-  print("Fruit Prices:");
-  fruitPrices.forEach((fruit, price) {
-    print("$fruit: \$$price");
-  });
+  for (String fruta in frutas.keys) {
+    print("Fruta: $fruta - Preço:  ${frutas[fruta]}");
+  }
 }
